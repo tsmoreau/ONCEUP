@@ -11,6 +11,7 @@ import Nav3 from "../parts/NavMenu3";
 import Nav3a from "../parts/NavMenu3a";
 import Nav4 from "../parts/NavMenu4";
 import Nav5 from "../parts/NavMenu5";
+import { BsPeopleFill } from "react-icons/bs";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +76,9 @@ function Nav() {
               <li className="hidden">
                 <Nav5 />
               </li>
+              <li>
+                <BsPeopleFill />
+              </li>
               <li className="">
                 <ThemeToggle />
               </li>
@@ -90,35 +94,39 @@ function Nav() {
               >
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    {" "}
-                    <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
-                  </svg>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      {" "}
+                      <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
+                    </svg>
+                  </div>
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 0 0"
-                    strokeWidth={3}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                    aria-hidden="true"
-                  >
-                    {" "}
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 0 0"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                      aria-hidden="true"
+                    >
+                      {" "}
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </div>
                 )}
               </button>
             </div>
